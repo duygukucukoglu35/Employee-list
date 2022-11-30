@@ -1,0 +1,59 @@
+@import "../../scss/variables";
+
+.user-cards {
+    font-family: 'Prompt', sans-serif;
+    color: $lightColor;
+    transition: all .6s;
+
+    .card {
+        background-color: $darkPurple;
+        border: none; 
+        box-shadow: $midDarkPurple 0px 3px 8px; 
+
+        .img {
+            @media (max-width: 460px) { 
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 10%;
+                margin-bottom: 5%;
+                transition: all .6s;
+
+                &:hover {
+                    transition: all .6s;
+                    transform: scale(1.1);
+                }
+            }
+           
+        }
+
+        h5 {
+            border-bottom: .5px solid #f3f9e39d;
+        }
+
+        img {
+            height: 100%; 
+            transition: all .6s;
+
+        }
+
+        small {
+            color: $lightColor !important;
+            display: flex;
+            justify-content: end;
+            padding-right: 1rem;
+
+        }
+
+         &:hover {
+            transform: scale(1.1);
+            transition: all .8s;
+        }
+        @media (max-width: 460px) {
+            &:hover {
+                transition: all .6s;
+                transform: translateX(0px);
+            }
+        }
+    }
+}
